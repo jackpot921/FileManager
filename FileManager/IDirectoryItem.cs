@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace FileManager
 {
-    class Program
+    interface IDirectoryItem
     {
-        static void Main(string[] args)
-        {
-
-        }
+        string Name { get; set; }
+        int Size { get; set; }
+        void Show();
     }
 }
